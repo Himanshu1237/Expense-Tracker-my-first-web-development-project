@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFJ4teY2Emq7xjFOvJq7Dd81lql5Fu7dY"
+    crossorigin="anonymous">
+    
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 5rem 0;
+    }
+
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 3rem;
+      margin-top: -2rem;
+    }
+
+    .panel {
+      margin-top: 2rem;
+    }
+
+    section.bg-light {
+      background-color: #f8f9fa;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 1rem 0;
+    }
+  </style>
+  <title>Affiliate Program</title>
+
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Allow Notifications:</strong> We'd like to send you notifications for important updates. Would you like to
+      enable notifications?
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <button type="button" class="btn btn-primary btn-sm ml-2" onclick="requestNotificationPermission()">
+        Allow
+      </button>
+    </div>
+  </div>
+  <header class="text-center">
+    <div class="container">
+      <h1 class="display-4">Join Our Affiliate Program</h1>
+      <p class="lead">Earn money by promoting our products</p>
+    </div>
+  </header>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Why Join Our Affiliate Program?</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan ex. Proin
+        tristique, ligula a vestibulum facilisis, libero odio malesuada nisi, auctor ullamcorper urna elit vel orci.</p>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">How It Works</h2>
+          </div>
+          <div class="panel-body">
+            <ol>
+              <li>Sign up for our affiliate program</li>
+              <li>Get your unique affiliate link</li>
+              <li>Promote our products using your link</li>
+              <li>Earn commission on every sale made through your link</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Benefits</h2>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>High commission rates</li>
+              <li>Access to promotional materials</li>
+              <li>Dedicated affiliate support</li>
+              <li>Real-time tracking and reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Ready to Start Earning?</h2>
+      <p class="lead">Join our affiliate program today and start earning commissions!</p>
+      <a href="#" class="btn btn-primary btn-lg">Sign Up Now</a>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    integrity="sha384-pzjw8M+9rrdU3aZM+cUN9PjBwR+UnuYz0iD3VQ4k2G8WdsPM+9g9c9F9IT9x7Fkn"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFJ4teY2Emq7xjFOvJq7Dd81lql5Fu7dY"
+    crossorigin="anonymous"></script>
+
+</body>
+<script>
+  function requestNotificationPermission() {
+    if (Notification.permission === 'granted') {
+      // User has already granted permission
+      showNotification('Notification Permission', 'You have already granted permission for notifications.');
+    } else if (Notification.permission !== 'denied' || Notification.permission === 'default') {
+      // Request permission
+      Notification.requestPermission().then(function (permission) {
+        if (permission === 'granted') {
+          showNotification('Notification Permission', 'You have granted permission for notifications.');
+        }
+      });
+    }
+  }
+
+  function showNotification(title, message) {
+    new Notification(title, {
+      body: message
+    });
+  }
+</script>
+
+</html>

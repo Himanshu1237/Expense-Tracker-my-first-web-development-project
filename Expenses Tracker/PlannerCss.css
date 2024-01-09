@@ -1,0 +1,237 @@
+body, input{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 30px; 
+  font-weight: 700;
+}
+
+a, a:hover{
+  transition: .2s;
+}
+
+/* some resets and general styles */
+
+*{
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* page layout */
+
+body{
+  background: rgb(240, 240, 240);
+  overflow-y: scroll;
+}
+
+::selection{
+  background: rgb(26, 188, 156);
+  color: rgb(255, 255, 255);
+}
+
+::-moz-selection{
+  background: rgb(26, 188, 156);
+  color: rgb(255, 255, 255);
+}
+
+.clear{clear: both;}
+.wrapper{width: 1000px; margin: 0 auto;}
+
+/*******************************************************/
+
+header{
+	width: 100%;
+	height: 180px;
+	background: rgb(53, 53, 53);
+	color: rgb(255, 255, 255);
+}
+
+header h1{
+	padding-top: 75px;
+}
+
+.prim-color{
+	color: rgb(26, 188, 156);
+}
+
+/*******************************************************/
+
+section{
+	margin: 30px auto 0 auto;
+	color: rgb(53, 53, 53);
+}
+
+section .wrapper{
+	padding: 30px;
+	background: rgb(255, 255, 255);
+	-webkit-box-shadow: 3px 5px 9px 1px rgba(53, 53, 53, 0.5);
+	-moz-box-shadow: 3px 5px 9px 1px rgba(53, 53, 53, 0.5);
+	box-shadow: 3px 5px 9px 1px rgba(53, 53, 53, 0.5);
+}
+
+.col{
+}
+
+.left-col{
+	width: 60%;
+	float: left;
+}
+
+.right-col{
+	width: 35%;
+	float: right;
+}
+
+article p{
+	color: rgb(150, 150, 150);
+}
+
+article h2{
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid rgb(26, 188, 156);
+}
+
+article h2#erledigt{
+	margin-top: 60px;
+}
+
+/*******************************************************/
+
+ol{
+	margin: 0 0 30px -10px; /* you might wanna change the margin-right for some browsers (+30px looked better in chrome...) */
+}
+
+ol li{
+	line-height: 2;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+ol li:hover{
+	color: rgb(0, 0, 0);
+}
+
+ol span{
+	width: 22px;
+	height: 22px;
+	margin-top: 7.5px;
+	float: right;
+	transition: 0.3s all;
+}
+
+ol span:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: 0.3s all;
+}
+
+ol .check{
+	background: url(http://projekte.janoschvg.ch/bucket-list/img/check.png)no-repeat top left;
+	background-size: 22px;
+	margin-right: 10px;
+}
+
+ol .delete{
+	background: url(http://projekte.janoschvg.ch/bucket-list/img/delete.png)no-repeat top left;
+	background-size: 22px;
+}
+
+ol.done li{
+	text-decoration: line-through;
+}
+
+/*ol.done li:before{
+	text-decoration: none;
+	content: "Erledigt: ";
+	color: rgb(150, 150, 150);
+}*/
+
+ol.done .check{
+	display: none;
+}
+
+/*******************************************************/
+
+input[type="text"]{
+	width: 100;
+	border: 1px solid rgb(200, 200, 200);
+	padding: 5px;
+	margin: 15px 0;
+}
+
+input[type="submit"]{
+	border: none;
+	padding: 10px 15px;
+	border-radius: 3px;
+	background: rgb(53, 53, 53);
+	color: rgb(255, 255, 255);
+}
+
+/*******************************************************/
+
+footer.wrapper{
+	background: rgb(220, 220, 220);
+	color: rgb(100, 100, 100);
+}
+
+footer p{
+	margin-bottom: 15px;
+}
+
+footer p:last-child{
+	margin-bottom: 0;
+}
+
+footer a{
+	text-decoration: none;
+	border-bottom: 1px solid rgb(100, 100, 100);
+	color: rgb(100, 100, 100);
+}
+
+footer a:hover{
+	border-bottom: 1px solid rgb(26, 188, 156);
+	color: rgb(26, 188, 156);
+}
+
+
+footer.credits{
+	background: rgb(53, 53, 53);
+}
+
+.credits a{
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.credits a:hover{
+	color: rgb(26, 188, 156);
+	border-bottom: 1px solid rgb(26, 188, 156);
+}
+body.dark-mode {
+	background-color: #222;
+	color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon:focus {
+	outline: none;
+}

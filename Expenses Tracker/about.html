@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="jumba.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+  }
+    .about-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .column {
+      flex: 33.33%;
+      padding: 0 15px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a class="navbar-brand" href="">
+        <div class="navbar">
+          <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="expense_report.html"><i class="fa fa-fw fa-file"></i>Reports</a>
+          <a href="Planner.html"><i class="fa fa-fw fa-tasks"></i> Planner</a>
+          <a href="Cards.html"><i class="fa fa-fw fa-credit-card"></i> Cards</a>
+          <a href="Expense Tracker 2.html"> <i class="fa fa-fw fa-inr"></i>Add an expense</a>
+          <a href="Dashboard.html"><i class="fa fa-fw fa-search"></i> Dashboard</a>
+          <a href="Contact Us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+          <a href="LoginSignupPage.html"><i class="fa fa-fw fa-user"></i> Login</a>
+          <a href="about.html"><i class="fa fa-user" aria-hidden="true"></i>About Us</a>
+      </div>
+  </header>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row d-flex justify-content-center">
+    <div class="column">
+      <div class="card">
+        <img src="GigaBroly.png" alt="Jane">
+        <div class="container">
+          <h2>Himanshu Singh</h2>
+          <p class="title">CEO & Founder</p>
+          <p>It is me, Himanshu Singh the Founder, CEO and the one and only majority shareholder who manages and for the
+            most part does everything.</p>
+          <p>jane@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Beta.png" alt="Mike">
+        <div class="container">
+          <h2>Ishan Kamboh</h2>
+          <p class="title">Art Director</p>
+          <p>An employee of the Expense Tracker Company who's ready to do the bare minimum and someday hopefully more
+            and thereby contribute to the company in a meaningful way and not be a liability.
+          </p>
+          <p>mike@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="Gigachad.jpg" alt="John">
+        <div class="container">
+          <h2>Ishant Gill</h2>
+          <p class="title">Designer</p>
+          <p>The most cooperative and chill employee of the company and easy to work with. Ishant here does good with
+            the reports and presentation and contributes a respectable amount to the company.</p>
+          <p>john@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

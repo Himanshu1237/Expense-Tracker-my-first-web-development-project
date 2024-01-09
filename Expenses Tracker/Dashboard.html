@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+
+<body style="background-color: #ade3f1bb;">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #008cff;">
+        <a class="navbar-brand" href="#">Fitness Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Ashwani%20Seth/Desktop/jatin.html/GetFit%20home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#today-stats">Today's Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#log-workout">Log Workout</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Workouts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#running">Running</a>
+                        <a class="dropdown-item" href="#cycling">Cycling</a>
+                        <a class="dropdown-item" href="#swimming">Swimming</a>
+                        <a class="dropdown-item" href="#walking">Walking</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workout-history">Workout History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#water-intake">Water Intake</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#heartbeat">Heartbeat</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <div class="container mt-4" id="home">
+        <header class="text-center">
+            <h1>Welcome to Fitness Tracker</h1>
+            <p>Track your fitness progress and achieve your goals.</p>
+        </header>
+    </div>
+
+    <div class="container mt-4" id="today-stats">
+        <h2>Today's Stats</h2>
+        <ul>
+            <li>Steps: <span id="steps">0</span></li>
+            <li>Calories Burned: <span id="calories">0</span> kcal</li>
+            <li>Distance: <span id="distance">0</span> miles</li>
+        <h4>Step Streak</h4>
+            <div id="step-streak-bar" class="progress mt-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container mt-4" id="log-workout">
+        <form id="workout-form">
+            <div class="form-group">
+                <label for="stepCount">Steps</label>
+                <input type="number" class="form-control" id="stepCount" required>
+            </div>
+            <div class="form-group">
+                <label for="caloriesBurned">Calories Burned</label>
+                <input type="number" class="form-control" id="caloriesBurned" required>
+            </div>
+            <div class="form-group">
+                <label for="distanceCovered">Distance (miles)</label>
+                <input type="number" class="form-control" id="distanceCovered" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Log Workout</button>
+        </form>
+    </div>
+
+    <div class="container mt-4" id="workout-history">
+        <h2>Workout History</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Steps</th>
+                    <th>Calories Burned</th>
+                    <th>Distance</th>
+                </tr>
+            </thead>
+            <tbody id="workout-history-list">
+                <!-- Workout log history will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mt-4" id="progress-chart">
+        <!-- Progress Chart Section -->
+        <h2>Progress Chart</h2>
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="container mt-4" id="water-intake">
+        <h2>Water Intake</h2>
+        <form id="water-intake-form">
+            <div class="form-group">
+                <label for="waterAmount">Water Intake (ounces)</label>
+                <input type="number" class="form-control" id="waterAmount" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Log Water Intake</button>
+        </form>
+        <canvas id="water-chart" width="100" height="100"></canvas>
+    </div>
+    <div class="container mt-4" id="heartbeat">
+        <h2>Heartbeat</h2>
+        <form id="heartbeat-form">
+            <div class="form-group">
+                <label for="heartbeatRate">Heartbeat Rate (bpm)</label>
+                <input type="number" class="form-control" id="heartbeatRate" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Log Heartbeat</button>
+        </form>
+        <canvas id="heartbeat-chart" width="1000" height="500"></canvas>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let chart;
+        let chartData = {
+            labels: [],
+            datasets: [
+                {
+                    label: "Steps",
+                    data: [],
+                    borderColor: "rgb(75, 192, 192)",
+                    fill: false
+                },
+                {
+                    label: "Calories Burned",
+                    data: [],
+                    borderColor: "rgb(255, 99, 132)",
+                    fill: false
+                },
+                {
+                    label: "Distance",
+                    data: [],
+                    borderColor: "rgb(54, 162, 235)",
+                    fill: false
+                }
+            ]
+        };
+
+        let waterChart;
+        let waterData = {
+            labels: ["Consumed", "Remaining"],
+            datasets: [{
+                data: [0, 100],
+                backgroundColor: ["#36A2EB", "#FFCE56"]
+            }]
+        };
+
+        let heartbeatChart;
+        let heartbeatData = {
+            labels: [],
+            datasets: [{
+                label: "Heartbeat Rate",
+                data: [],
+                borderColor: "rgb(255, 99, 132)",
+                fill: false
+            }]
+        };
+
+        $(document).ready(function () {
+            <!-- Add this JavaScript code inside the $(document).ready() function -->
+            // Initialize step streak bar
+            const stepStreakBar = document.getElementById("step-streak-bar").querySelector(".progress-bar");
+
+            // Update the step streak bar based on the streak percentage
+            function updateStepStreakBar() {
+                const totalSteps = parseInt($("#steps").text());
+                const streakPercentage = (totalSteps % 100) / 100 * 100; // Change 100 to your desired streak goal
+                stepStreakBar.style.width = ${streakPercentage}%;
+                stepStreakBar.setAttribute("aria-valuenow", streakPercentage);
+            }
+
+            // Call the function to update the step streak bar
+            updateStepStreakBar();
+
+            // Update the step streak bar whenever a new workout is logged
+            $("#workout-form").submit(function (e) {
+                e.preventDefault();
+
+                // Get the input values
+                const steps = parseInt($("#stepCount").val());
+                const calories = parseInt($("#caloriesBurned").val());
+                const distance = parseFloat($("#distanceCovered").val());
+
+                // Ask for confirmation before logging a workout
+                const confirmLog = confirm("Are you sure you want to log this workout?");
+                if (!confirmLog) {
+                    return; // Do nothing if the user cancels the confirmation
+                }
+
+                // Update the stats
+                const currentSteps = parseInt($("#steps").text());
+                const currentCalories = parseInt($("#calories").text());
+                const currentDistance = parseFloat($("#distance").text());
+
+                $("#steps").text(currentSteps + steps);
+                $("#calories").text(currentCalories + calories);
+                $("#distance").text((currentDistance + distance).toFixed(2));
+
+                // Log the workout in the history
+                const currentDate = new Date().toLocaleDateString();
+                $("#workout-history-list").append(`
+                    <tr>
+                        <td>${currentDate}</td>
+                        <td>${steps}</td>
+                        <td>${calories}</td>
+                        <td>${distance.toFixed(2)}</td>
+                    </tr>
+                `);
+
+                // Update the progress chart data
+                chartData.labels.push(currentDate);
+                chartData.datasets[0].data.push(steps);
+                chartData.datasets[1].data.push(calories);
+                chartData.datasets[2].data.push(distance);
+
+                if (chart) {
+                    chart.update();
+                }
+
+                // Reset the form
+                $("#stepCount").val("");
+                $("#caloriesBurned").val("");
+                $("#distanceCovered").val("");
+
+                // Call the function to update the step streak bar after logging a workout
+                updateStepStreakBar();
+            });
+
+            // Initialize the progress chart
+            const ctx = document.getElementById("chart").getContext("2d");
+            chart = new Chart(ctx, {
+                type: "line",
+                data: chartData
+            });
+
+            // Initialize the water intake form submission handler
+            $("#water-intake-form").submit(function (e) {
+                e.preventDefault();
+                const waterAmount = parseInt($("#waterAmount").val());
+
+                // Update the water chart data
+                waterData.datasets[0].data[0] += waterAmount;
+                waterData.datasets[0].data[1] -= waterAmount;
+
+                if (waterChart) {
+                    waterChart.update();
+                }
+
+                // Reset the form
+                $("#waterAmount").val("");
+            });
+
+            // Initialize the water chart
+            const waterCtx = document.getElementById("water-chart").getContext("2d");
+            waterChart = new Chart(waterCtx, {
+                type: "pie",
+                data: waterData
+            });
+
+            // Initialize the heartbeat form submission handler
+            $("#heartbeat-form").submit(function (e) {
+                e.preventDefault();
+                const heartbeatRate = parseInt($("#heartbeatRate").val());
+
+                // Update the heartbeat chart data
+                const currentDate = new Date().toLocaleTimeString();
+                heartbeatData.labels.push(currentDate);
+                heartbeatData.datasets[0].data.push(heartbeatRate);
+
+                if (heartbeatChart) {
+                    heartbeatChart.update();
+                } else {
+                    // Initialize the heartbeat chart
+                    const heartbeatCtx = document.getElementById("heartbeat-chart").getContext("2d");
+                    heartbeatChart = new Chart(heartbeatCtx, {
+                        type: "line",
+                        data: heartbeatData,
+                        options: {
+                            responsive: false,
+                            maintainAspectRatio: false,
+                            scales: {
+                                x: {
+                                    type: 'linear',
+                                    position: 'bottom'
+                                }
+                            }
+                        }
+                    });
+                }
+
+                // Reset the form
+                $("#heartbeatRate").val("78");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

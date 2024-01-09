@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker App</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <h1 class="title">Add an Expense</h1>
+    <style>
+        /* Add any additional styles here */
+        .total {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+    <header>
+<body>
+    <header>
+        <nav>
+          <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <a class="navbar-brand" href="">
+            <div class="navbar">
+              <a class="active" href="Expense Tracker Design.html"><i class="fa fa-fw fa-home"></i> Home</a>
+              <a href="expense_report.html"><i class="fa fa-fw fa-file"></i>Reports</a>
+              <a href="Planner.html"><i class="fa fa-fw fa-tasks"></i> Planner</a>
+              <a href="Cards.html"><i class="fa fa-fw fa-credit-card"></i> Cards</a>
+              <a href="Expense Tracker 2.html"> <i class="fa fa-fw fa-inr"></i>Add an expense</a>
+              <a href="Dashboard.html"><i class="fa fa-fw fa-search"></i> Dashboard</a>
+              <a href="Contact Us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+              <a href="LoginSignupPage.html"><i class="fa fa-fw fa-user"></i> Login</a>
+              <a href="about.html"><i class="fa fa-user" aria-hidden="true"></i>About Us</a>
+          </div>
+      </header>
+    <section class="content">
+        <h3 class="secondTitle">Add a new item: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Cryptocoin">Cryptocoin</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine left">
+                    <span for="date">Date:</span>
+                    <input type="date" id="date">
+                </div>
+                <div class="formLine right">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave" id="submitButton">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                    Add a new expense
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+
+            </tbody>
+        </table>
+    </section>
+    <section class="content">
+        <div class="total" id="totalExpense">Total Expense: $0</div>
+        <table class="table">
+            <!-- ... (existing table content) ... -->
+        </table>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
