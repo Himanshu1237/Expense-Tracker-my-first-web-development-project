@@ -14,7 +14,9 @@ Project Highlights:
 Project Structure:
 
 📁 /js: Houses JavaScript files implementing various functions.
+<br>
 📁 /css: Includes Bootstrap and custom CSS files for styling.
+<br>
 📁 /html: Holds HTML files with tags showcasing the student's understanding of HTML concepts.
 
 Contributions and Feedback:
