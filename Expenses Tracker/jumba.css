@@ -13,7 +13,7 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 35%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -24,7 +24,7 @@ html {
 }
 
 .about-section {
-  padding: 50px;
+  padding: 55px;
   text-align: center;
   background-color: #474e5d;
   color: white;
@@ -48,7 +48,7 @@ html {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 9px;
   color: white;
   background-color: #000;
   text-align: center;
