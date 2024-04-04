@@ -1,9 +1,9 @@
 # Expense-Tracker-my-first-web-development-project
 
 
-GitHub Repository Description: Expense Tracker by Himanshu Singh
+GitHub Repository Description: Expense Tracker by Himanshu Singh, Ishit Sharma, Vishwanath, Harmanpreet Joshi.
 
-👋 Hello, fellow developers! I'm Himanshu Singh, a first-year B.E. C.S.E. student, passionate about honing my skils. This project, an Expense Tracking website, serves as a playground for me to implement a variety of functions and tags learned in my introductory courses.
+👋 Hello, fellow developers! I'm Himanshu Singh, a first-year B.E. C.S.E. student, passionate about honing my skils. This team project, an Expense Tracking website, serves as a playground for me to implement a variety of functions and tags learned in my introductory courses.
 
 Project Highlights:
 
