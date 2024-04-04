@@ -17,6 +17,16 @@ Contributors:
 &nbsp &nbsp-->Dashboard optimization<br>
    <br>
 
+2) Himanshu Singh
+ <br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+   <br>
+
+
 Project Highlights:
 <br>
 
