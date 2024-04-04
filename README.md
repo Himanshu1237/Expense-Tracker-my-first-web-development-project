@@ -10,11 +10,11 @@ Contributors:
 <br>
 1) Harmanpreet Joshi
  <br>
-&nbsp &nbsp-->Dashboard optimization<br>
-&nbsp &nbsp-->jumba optimization<br>
-&nbsp &nbsp-->contact optimization<br>
-&nbsp &nbsp-->Expense Tracker 2 optimization<br>
-&nbsp &nbsp-->Dashboard optimization<br>
+/t-->Dashboard optimization<br>
+/t-->jumba optimization<br>
+/t-->contact optimization<br>
+/t-->Expense Tracker 2 optimization<br>
+/t-->Dashboard optimization<br>
    <br>
 
 2) Himanshu Singh
