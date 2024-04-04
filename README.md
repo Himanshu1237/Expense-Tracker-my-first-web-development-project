@@ -25,6 +25,14 @@ Contributors:
 &nbsp &nbsp--><br>
 &nbsp &nbsp--><br>
    <br>
+3) Ishit Sharma
+ <br>
+&nbsp &nbsp--> updated css<br>
+&nbsp &nbsp-->added files<br>
+&nbsp &nbsp--> updated loginpage<br>
+&nbsp &nbsp-->changed padding<br>
+&nbsp &nbsp-->changed width and updated readme<br>
+   <br>
 
 
 Project Highlights:
