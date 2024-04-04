@@ -10,11 +10,11 @@ Contributors:
 <br>
 1) Harmanpreet Joshi
  <br>
-       -->Dashboard optimization<br>
-       -->jumba optimization<br>
-       -->contact optimization<br>
-       -->Expense Tracker 2 optimization<br>
-       -->Dashboard optimization<br>
+<&nbsp><&nbsp>-->Dashboard optimization<br>
+<&nbsp><&nbsp>-->jumba optimization<br>
+<&nbsp><&nbsp>-->contact optimization<br>
+<&nbsp><&nbsp>-->Expense Tracker 2 optimization<br>
+<&nbsp><&nbsp>-->Dashboard optimization<br>
    <br>
 
 Project Highlights:
