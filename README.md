@@ -20,9 +20,9 @@ Contributors:
 2) Himanshu Singh
  <br>
 &nbsp &nbsp-->Topnav Backgroound colour Modification<br>
-&nbsp &nbsp--><br>
-&nbsp &nbsp--><br>
-&nbsp &nbsp--><br>
+&nbsp &nbsp-->Pull Request manging<br>
+&nbsp &nbsp-->Affiliate Program Updation<br>
+&nbsp &nbsp-->POutside pull requests<br>
 &nbsp &nbsp--><br>
    <br>
 3) Ishit Sharma
