@@ -6,17 +6,19 @@ GitHub Repository Description: Expense Tracker by Himanshu Singh, Ishit Sharma, 
 👋 Hello, fellow developers! I'm Himanshu Singh,along with my team mates Vishwanath, Ishit Sharma, and Harmanpreet Joshi, a team of first-year B.E. C.S.E. students, passionate about honing our skils. This team project, an Expense Tracking website, serves as a playground for us to implement a variety of functions and tags learned in my introductory courses.
 
 
-Contributions:
-
+Contributors:
+<br>
 1) Harmanpreet Joshi
-       -->Dashboard optimization
-       -->jumba optimization
-       -->contact optimization
-       -->Expense Tracker 2 optimization
-       -->Dashboard optimization
-   
+ <br>
+&nbsp &nbsp-->Dashboard optimization<br>
+&nbsp &nbsp-->jumba optimization<br>
+&nbsp &nbsp-->contact optimization<br>
+&nbsp &nbsp-->Expense Tracker 2 optimization<br>
+&nbsp &nbsp-->Dashboard optimization<br>
+   <br>
 
 Project Highlights:
+<br>
 
 🚀 Functional Variety: This project focuses on incorporating a myriad of functions and tags, showcasing the versatility of these technologies. Expect to find a range of features inspired by JavaScript concepts taught in class.
 📝 To-Do List Integration: Witness the integration of a to-do list, demonstrating my understanding of dynamic content manipulation using JavaScript so far.
