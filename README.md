@@ -24,3 +24,4 @@ Contributions and Feedback:
 
 
 Note: While the project may prioritize the implementation of functions and tags, certain features, like the to-do list, are expected to function properly. Keep in mind that this project is primarily a learning endeavor, focusing on the utilization of various functions rather than achieving a polished and fully functional expense tracker.
+{Hello from outsider}
