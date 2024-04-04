@@ -10,16 +10,16 @@ Contributors:
 <br>
 1) Harmanpreet Joshi
  <br>
-/t-->Dashboard optimization<br>
-/t-->jumba optimization<br>
-/t-->contact optimization<br>
-/t-->Expense Tracker 2 optimization<br>
-/t-->Dashboard optimization<br>
+ -->Dashboard optimization<br>
+ -->jumba optimization<br>
+ -->contact optimization<br>
+ -->Expense Tracker 2 optimization<br>
+ -->Dashboard optimization<br>
    <br>
 
 2) Himanshu Singh
  <br>
-&nbsp &nbsp--><br>
+&nbsp &nbsp-->Topnav Backgroound colour Modification<br>
 &nbsp &nbsp--><br>
 &nbsp &nbsp--><br>
 &nbsp &nbsp--><br>

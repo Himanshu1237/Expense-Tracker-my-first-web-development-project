@@ -2,7 +2,7 @@ $(document).ready(function () {
 	// variablen
 	var error = "Please type something in the input field in order to add it to your list.";
 	var noItems = "No entries found";
-	var animTime = 300;
+	var animTime = 301;
 
 	// Load saved to-do list items from localStorage
 	var savedItems = JSON.parse(localStorage.getItem('toDoItems')) || [];
