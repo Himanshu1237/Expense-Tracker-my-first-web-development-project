@@ -10,12 +10,30 @@ Contributors:
 <br>
 1) Harmanpreet Joshi
  <br>
-&nbsp &nbsp-->Dashboard optimization<br>
-&nbsp &nbsp-->jumba optimization<br>
-&nbsp &nbsp-->contact optimization<br>
-&nbsp &nbsp-->Expense Tracker 2 optimization<br>
-&nbsp &nbsp-->Dashboard optimization<br>
+/t-->Dashboard optimization<br>
+/t-->jumba optimization<br>
+/t-->contact optimization<br>
+/t-->Expense Tracker 2 optimization<br>
+/t-->Dashboard optimization<br>
    <br>
+
+2) Himanshu Singh
+ <br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+&nbsp &nbsp--><br>
+   <br>
+3) Ishit Sharma
+ <br>
+&nbsp &nbsp--> updated css<br>
+&nbsp &nbsp-->added files<br>
+&nbsp &nbsp--> updated loginpage<br>
+&nbsp &nbsp-->changed padding<br>
+&nbsp &nbsp-->changed width and updated readme<br>
+   <br>
+
 
 Project Highlights:
 <br>
