@@ -34,13 +34,13 @@ Contributors:
 &nbsp &nbsp-->changed width and updated readme<br>
    <br>
 
-4) Vishwanath
+ 4) Vishwanath
    <br>
-   &nbsp &nbsp-->uploaded files<br>
-   &nbsp &nbsp-->images management<br>
-   &nbsp &nbsp-->code optimisation<br>
-   &nbsp &nbsp-->removed unnecessary files<br>
-   &nbsp &nbsp-->management<br>
+   -->uploaded files<br>
+   -->images management<br>
+   -->code optimisation<br>
+   -->removed unnecessary files<br>
+   -->management<br>
    <br>
 
    
