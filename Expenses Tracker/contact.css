@@ -5,7 +5,7 @@
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -15,7 +15,7 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
-  padding: 12px 20px;
+  padding: 13px 19px;
   border: none;
   cursor: pointer;
 }
