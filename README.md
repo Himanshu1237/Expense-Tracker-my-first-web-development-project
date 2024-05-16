@@ -11,19 +11,18 @@ Contributors:
 1) Harmanpreet Joshi
  <br>
  -->Dashboard optimization<br>
- -->jumba optimization<br>
- -->contact optimization<br>
- -->Expense Tracker 2 optimization<br>
+ -->Style formatting<br>
+ -->contact page optimization<br>
+ -->Expense to-do list optimization optimization<br>
  -->Dashboard optimization<br>
    <br>
 
 2) Himanshu Singh
  <br>
-&nbsp &nbsp-->Topnav Backgroound colour Modification<br>
+&nbsp &nbsp-->Responsiveness<br>
 &nbsp &nbsp-->Pull Request manging<br>
-&nbsp &nbsp-->Affiliate Program Updation<br>
-&nbsp &nbsp-->POutside pull requests<br>
-&nbsp &nbsp--><br>
+&nbsp &nbsp-->Affiliate Program Page Updation<br>
+&nbsp &nbsp-->Managing non-collaborator pull requests<br>
    <br>
 3) Ishit Sharma
  <br>
@@ -34,7 +33,7 @@ Contributors:
 &nbsp &nbsp-->changed width and updated readme<br>
    <br>
 
- 4) Vishwanath
+4) Vishwanath
    <br>
    -->uploaded files<br>
    -->images management<br>
